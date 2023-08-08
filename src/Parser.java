@@ -51,7 +51,7 @@ public class Parser
 
         public static void main(String[] args)
         {
-            //String expr = "([{}])";
+            String expr = "([{}])";
 
             // Function call
             if (areBracketsBalanced(expr))
@@ -62,21 +62,4 @@ public class Parser
         }
     }
 }
-
-/*try
-            {
-                File filename = new File("/Users/michalrunge/desktop/parser.txt");
-                System.out.println("Checking " + filename + " for inconsistencies...\t");
-                BufferedReader br = new BufferedReader(new FileReader(filename));
-                String str;
-                //noinspection SuspiciousIndentAfterControlStatement
-                while ((str = br.readLine()) != null)
-                {
-                    System.out.println(str);
-                    new BalancedBrackets();
-                }
-            } catch (Exception exc)
-            {
-                System.out.println(exc.getMessage());
-            }*/
 
